@@ -1,0 +1,14 @@
+{
+  "name": "typescript-node-starter",
+  "version": "0.0.0",
+  "description": "A starter template for TypeScript and Node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chronic-2001/typescript-node-starter.git"
+  },
+  "author": "Chronic Wang <chronic.wang@gmail.com>",
+  "license": "MIT"
+}

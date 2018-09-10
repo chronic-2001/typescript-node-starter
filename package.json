@@ -4,12 +4,12 @@
   "description": "A starter template for TypeScript and Node",
   "scripts": {
     "clean": "rimraf dist",
-    "lint": "tslint -t stylish -p tsconfig.json",
+    "lint": "tslint -t stylish -p tsconfig.test.json",
     "prebuild": "npm run clean && npm run lint",
     "build": "tsc",
     "watch": "tsc -w",
     "pretest": "npm run lint",
-    "test": "jest --colors",
+    "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch"
   },
@@ -20,6 +20,11 @@
   "author": "Chronic Wang <chronic.wang@gmail.com>",
   "license": "MIT",
   "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.test.json"
+      }
+    },
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },

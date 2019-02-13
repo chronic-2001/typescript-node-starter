@@ -22,7 +22,7 @@
   "jest": {
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "tsconfig.test.json"
+        "tsConfig": "tsconfig.test.json"
       }
     },
     "transform": {
